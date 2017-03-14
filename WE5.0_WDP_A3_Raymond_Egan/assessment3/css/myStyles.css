@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	background-image: url(../images/DesktopBG.png);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	
+}
+.container
+{
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	background-color: #FFF;
+}
+.navbar
+{
+	margin-bottom: 0px;
+}
+.navbarBG.container
+{
+	background-color: #222;
+	border: none;
+}
+#content
+{
+	padding-top: 20px;
+	min-height: 100vh;
+	margin-bottom: 100px;
+}
+.banner
+{
+	background-color: #82CAFF;
+	border: 1px solid #000;
+	font-family: 'Passion One', cursive;
+	padding-left: 5px;
+}
+table
+{
+	margin-left: 10px;
+}
+p
+{
+	text-align: justify;
+}
+.caption
+{
+	background-color: #EFEFEF;
+	text-align: center;
+}
+.img-padding
+{
+	padding: 10px;
+}
+.blueBG
+{
+	background-color: #82CAFF;
+}
+.textShadow
+{
+	color: #FFF;
+	text-shadow: 1px 1px 5px #000;
+}
+#myFooter
+{
+	color: #FFF;
+	padding: 10px;
+}
+.carousel-caption
+{
+	background-color: #000;
+	border: 1px solid #82CAFF;
+}
+#rightSidebar
+{
+	padding-top: 20px;
+}
+.blackText
+{
+	color: #000;
+}
+.centerText
+{
+	text-align: center;
+}

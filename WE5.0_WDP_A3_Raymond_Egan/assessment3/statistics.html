@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<!-- Document skeleton created using Adobe Dreamweaver -->
+    <!-- Resources used include getbootstrap.com, w3schools.com, stackoverflow.com -->
+    
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Athlone Town FC Statistics</title>
+    <!-- Bootstrap CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+    <!-- My CSS -->
+	<link href="css/myStyles.css" rel="stylesheet">
+    <!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/bootstrap.js"></script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+        
+  	<!-- Ray Egan
+    	13/03/17
+        WDP Assessment 3 HTML Build -->
+    
+    <!-- The brief is to create a 4-10 page website with subject matter of our choosing.
+    Each page should contain a relevant doctype, be well commented, well formatted and free from JavaScript errors.
+    The site should be based on Bootstrap and jQuery, making it fully responsive.
+    It should have a consistant navigation system, with the major sections of the website always accessible.
+    It should contain a selection of Bootstrap components. 
+    It should contain a transition effect or some other animated jQuery effect.
+    It should include some custom CSS, with user defined classes and IDs.
+    It should communicate with at least one Bootstrap plugin using Data Attributes.
+   	It should exercise best practice in page load order. 
+    Code should be commented sufficiently and any re-used code referenced. -->
+  </head>
+  
+  <body>
+  
+  	<!-- start of navbar -->
+    <!-- a full-width-of-the-screen navbar with colour inverted (black) that is static at the top of the page -->
+    <div class="navbar navbar-inverse navbar-static-top">
+        <!-- container class centres the content -->
+        <div class="navbarBG container">
+            <a href ="index.html" class="navbar-brand">Athlone Town FC</a>
+            
+            <!-- creating a button that will display when the navbar collapses for mobile viewing using data-attributes -->
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <a href="#" class="btn btn-default btn-sm">
+                	<!-- scalable glyphicon used to display "hamburger" icon to denote dropdown-menu navbar -->
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </a>
+            </button>
+            
+            <div class="collapse navbar-collapse navHeaderCollapse">
+            	<!-- an unordered list that, with styling, appears as a horizontal navbar, aligned to the right -->
+                <!-- start of outer ul -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                 	<!-- active class attached to "current" list item to show what page we are currently on -->
+                    <li class="dropdown active">
+                    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Statistics <b class="caret"></b></a>
+                        <!-- a nested unordered list to create a dropdown menu for the Statistics -->
+                        <!-- start of innder ul -->
+                        <ul class="dropdown-menu">
+                            <li><a href="statistics.html#table">League Table</a></li>
+                            <li><a href="statistics.html#fixtures">Fixtures & Results</a></li>
+                            <li><a href="statistics.html#player-apps">Player Appearances</a></li>
+                        </ul><!-- end of inner ul -->
+                    </li>
+                    <li><a href="squad.html">Squad</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Youth Academy <b class="caret"></b></a>
+                        <!-- a nested unordered list to create a dropdown menu for the Youth Academy -->
+                        <!-- start of innder ul -->
+                        <ul class="dropdown-menu">
+                            <li><a href="under-19.html">Under-19s</a></li>
+                            <li><a href="under-17.html">Under-17s</a></li>
+                        </ul><!-- end of inner ul -->
+                    </li>
+                    <li><a href="history.html">History</a></li>
+                </ul><!-- end of outer ul -->
+            </div>
+	    </div><!-- end of navbar container -->
+   	</div><!-- end of navbar -->
+    
+    <!-- a new container class after the navbar to centre our main content -->
+    <div class="container">
+    	<!-- start of a row to contain columns -->
+        <div class="row">
+         
+            <!-- start of 9-col main content -->
+            <div class="col-lg-9">
+            	<div id="content">
+                	<!-- start of 3-panel accordion group -->
+                	<div class="panel-group" id="accordion1">
+                        <!-- start of league table accordion panel -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#table">SSE Airtricity League First Division Table</a></h4>
+                          </div>
+                            <div id="table" class="panel-collapse collapse">
+                              <div class="panel-body">
+                              	<table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tbody>
+                                    <tr>
+                                      <th width="7%" scope="col">Pos.</th>
+                                      <th width="37%" scope="col">Team</th>
+                                      <th width="7%" scope="col">P</th>
+                                      <th width="7%" scope="col">W</th>
+                                      <th width="7%" scope="col">D</th>
+                                      <th width="7%" scope="col">L</th>
+                                      <th width="7%" scope="col">+</th>
+                                      <th width="7%" scope="col">-</th>
+                                      <th width="7%" scope="col">GD</th>
+                                      <th width="7%" scope="col">Pts</th>
+                                    </tr>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>Waterford FC</td>
+                                      <td>3</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>1</td>
+                                      <td>5</td>
+                                      <td>1</td>
+                                      <td>+4</td>
+                                      <td>06</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2</td>
+                                      <td>UCD AFC</td>
+                                      <td>3</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>1</td>
+                                      <td>5</td>
+                                      <td>2</td>
+                                      <td>+3</td>
+                                      <td>06</td>
+                                    </tr>
+                                    <tr>
+                                      <td>3</td>
+                                      <td>Athlone Town</td>
+                                      <td>3</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>1</td>
+                                      <td>3</td>
+                                      <td>4</td>
+                                      <td>-1</td>
+                                      <td>06</td>
+                                    </tr>
+                                    <tr>
+                                      <td>4</td>
+                                      <td>Cobh Ramblers</td>
+                                      <td>3</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>5</td>
+                                      <td>3</td>
+                                      <td>+2</td>
+                                      <td>05</td>
+                                    </tr>
+                                    <tr>
+                                      <td>5</td>
+                                      <td>Longford Town</td>
+                                      <td>3</td>
+                                      <td>1</td>
+                                      <td>1</td>
+                                      <td>1</td>
+                                      <td>4</td>
+                                      <td>3</td>
+                                      <td>+1</td>
+                                      <td>04</td>
+                                    </tr>
+                                    <tr>
+                                      <td>6</td>
+                                      <td>Cabinteely FC</td>
+                                      <td>3</td>
+                                      <td>1</td>
+                                      <td>0</td>
+                                      <td>2</td>
+                                      <td>2</td>
+                                      <td>4</td>
+                                      <td>-2</td>
+                                      <td>03</td>
+                                    </tr>
+                                    <tr>
+                                      <td>7</td>
+                                      <td>Shelbourne FC</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>2</td>
+                                      <td>1</td>
+                                      <td>1</td>
+                                      <td>5</td>
+                                      <td>-4</td>
+                                      <td>02</td>
+                                    </tr>
+                                    <tr>
+                                      <td>8</td>
+                                      <td>Wexford FC</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td>2</td>
+                                      <td>5</td>
+                                      <td>-3</td>
+                                      <td>01</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+							</div>
+                          </div>
+                        </div><!-- end of league table panel -->
+                    
+                    	<!-- start of fixtures and results accordion panel -->
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#fixtures">SSE Airtricity League First Division Fixtures & Results</a></h4>
+                      </div>
+                      	
+                        <div id="fixtures" class="panel-collapse collapse">
+                          <table width="100%" border="0" cellspacing="2" cellpadding="2">
+                              <tbody>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Teams</th>
+                                    <th>Score</th>
+                                </tr>
+                                <tr>
+                                  <td>24/02/2017</td>
+                                  <td>Athlone Town Vs. Waterford FC</td>
+                                  <td>1 - 0</td>
+                                </tr>
+                                <tr>
+                                  <td>03/03/2017</td>
+                                  <td>Wexford FC Vs. Athlone Town</td>
+                                  <td>1 - 2</td>
+                                </tr>
+                                <tr>
+                                  <td>10/03/2017</td>
+                                  <td>Athlone Town Vs. Longford Town</td>
+                                  <td>0 - 3</td>
+                                </tr>
+                                <tr>
+                                  <td>18/03/2017</td>
+                                  <td>Cobh Ramblers Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>25/03/2017</td>
+                                  <td>Athlone Town Vs. Shelbourne FC</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>31/03/2017</td>
+                                  <td>Athlone Town Vs. Cabinteely FC</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>08/04/2017</td>
+                                  <td>UCD AFC Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>14/04/2017</td>
+                                  <td>Waterford FC Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>21/04/2017</td>
+                                  <td>Athlone Town Vs. Wexford FC</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>29/04/2017</td>
+                                  <td>Longford Town Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>05/05/2017</td>
+                                  <td>Athlone Town Vs. Cobh Ramblers</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>12/05/2017</td>
+                                  <td>Shelbourne FC Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>19/05/2017</td>
+                                  <td>Cabinteely FC Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>26/05/2017</td>
+                                  <td>Athlone Town Vs. UCD AFC</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>02/06/2017</td>
+                                  <td>Athlone Town Vs. Waterford FC</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>16/06/2017</td>
+                                  <td>Wexford FC Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>23/03/2017</td>
+                                  <td>Athlone Town Vs. Longford Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>01/07/2017</td>
+                                  <td>Cobh Ramblers Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>07/07/2017</td>
+                                  <td>Athlone Town Vs. Shelbourne FC</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>14/04/2017</td>
+                                  <td>Athlone Town Vs. Cabinteely FC</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>21/07/2017</td>
+                                  <td>UCD AFC Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>28/07/2017</td>
+                                  <td>Waterford FC Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>04/08/2017</td>
+                                  <td>Athlone Town Vs. Wexford FC</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>19/08/2017</td>
+                                  <td>Longford Town Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>01/09/2017</td>
+                                  <td>Athlone Town Vs. Cobh Ramblers</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>15/09/2017</td>
+                                  <td>Shelbourne FC Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>22/09/2017</td>
+                                  <td>Cabinteely FC Vs. Athlone Town</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>07/10/2017</td>
+                                  <td>Athlone Town Vs. UCD AFC</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                             </tbody>
+                          </table>
+                      </div>
+                    </div><!-- end of fixtures and results accordion panel -->
+                    
+                    <!-- start of player apps accordion panel -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#player-apps">Player Appearances & Goals</a></h4>
+                          </div>
+                            <div id="player-apps" class="panel-collapse collapse">
+                              <div class="panel-body">
+                              	<table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tbody>
+                                    <tr>
+                                      <th scope="col">Name</th>
+                                      <th scope="col">Start</th>
+                                      <th scope="col">Sub</th>
+                                      <th scope="col">Apps</th>
+                                      <th scope="col">Goals</th>
+                                      <th scope="col">C/S</th>
+                                    </tr>
+                                    <tr>
+                                      <td>BARRY, Conor</td>
+                                      <td>1</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>BRILLY, Aaron</td>
+                                      <td>0</td>
+                                      <td>1</td>
+                                      <td>1</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>BROOKES, David</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>BYRNE, Aidan</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>COSS, Colm</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>3</td>
+                                      <td>2</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>DEMPSEY, Ian</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>FEENEY, Val</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>GAFFEY, Ryan</td>
+                                      <td>0</td>
+                                      <td>1</td>
+                                      <td>1</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>GLEESON, Connor</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                      <td>0</td>
+                                    </tr>
+                                    <tr>
+                                      <td>GRIGOROVS, Kirils</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>HERNANDEZ, Frederico</td>
+                                      <td>2</td>
+                                      <td>1</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>KEOGH, Ethan</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>KING, Roy</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>LABUTS, Igors</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>3</td>
+                                      <td>-</td>
+                                      <td>1</td>
+                                    </tr>
+                                    <tr>
+                                      <td>LYONS, Jason</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>McGRANE, Sean</td>
+                                      <td>0</td>
+                                      <td>1</td>
+                                      <td>1</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>MOLLOY, Jason</td>
+                                      <td>1</td>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>MOLONEY, Joe</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>NEVIN, Andy</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>RAFTERY, Cormac</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>REID, Chris</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>SCULLION, Niall</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>SFRIJAN, Dragos</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>VIEGAS, Jose</td>
+                                      <td>3</td>
+                                      <td>0</td>
+                                      <td>3</td>
+                                      <td>1</td>
+                                      <td>-</td>
+                                    </tr>
+                                    <tr>
+                                      <td>WALSH, Peter</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>0</td>
+                                      <td>-</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+							</div>
+                          </div>
+                        </div><!-- end of player apps accordion panel -->     
+              	  </div><!-- end of 3-panel accordion -->
+
+                </div><!-- end of content -->
+            </div><!-- end of 9-col main content -->
+            
+            <!-- start of 3-col right sidebar -->
+            <!-- sidebar contains no critical information, disappears at smaller viewports -->
+	        <div class="col-lg-3 blackBG hidden-md hidden-sm hidden-xs" id="rightSidebar">
+            
+            	<!-- start next game info panel -->
+                <div class="panel panel-info blueBG">
+                  <div class="panel-body textShadow">
+                    Next Game
+                  </div>
+                  <div class="panel-footer blackText">
+                  	  <div class="row">    
+                        <div class="col-lg-5 align-center">
+                            <img src="images/cobh-ramblers-crest.png" alt="">
+                        </div>
+                        <div class="col-lg-2 align-center">
+                            <h1>V</h1>
+                        </div>
+                        <div class="col-lg-5 align-center">
+                            <img src="images/athlone-town-crest.png" alt="">
+                        </div>
+                      </div>
+                      <div class="row">
+                      	<div class="col-lg-12 centerText">
+                        	St. Colman's Park<br>
+                    		Saturday March 18th
+                        </div>
+                      </div>
+                  </div>
+                </div><!-- end of next game info panel -->
+                        	
+        		<!-- start did you know info panel -->
+                <div class="panel panel-info blueBG">
+                  <div class="panel-body textShadow">
+                    Did You Know?
+                  </div>
+                  <div class="panel-footer blackText">
+                  	<p>Athlone Town are the oldest football in Ireland. They were founded in 1887 by Orlando Robert Coote, and played their first game on Wednesday February 9th 1887; a 0-0 draw against Castlerea.</p>
+                  </div>
+                </div><!-- end of did you know info panel -->
+        	</div><!-- end of 3-col right sidebar -->
+        </div><!-- end of row -->
+    </div><!-- end of content container -->
+    
+    <!-- start of footer -->
+    <!-- a full-width-of-the-screen footer with colour inverted (black) that is fixed to the bottom of the page -->
+    <footer class="navbar navbar-inverse navbar-fixed-bottom">
+        <!-- container class centres the content -->
+        <div class="navbarBG container">         
+                <div class="nav navbar-nav navbar-left" id="myFooter">
+                    <p class="whiteText">&copy; Athlone Town FC, Athlone Town Stadium, Athlone, Co. Westmeath</p>
+                </div>
+	    </div><!-- end of footer container -->
+   	</footer><!-- end of footer -->    
+    
+  	<!-- jQuery scripts included in the foot of the document to ensure the page has loaded before they can be called
+    	This is particularly important for users on mobile devices with limited bandwidth to ensure components trigger when they are supposed to -->
+  	<scriptarea>
+        <!-- takes whatever comes after # in the url, and opens that accordion panel -->
+		<script>
+			$(document).ready(function() {
+				$(window.location.hash).collapse('show'); 
+			});
+		</script>
+	</scriptarea><!-- end of scriptarea -->
+  </body>
+</html>

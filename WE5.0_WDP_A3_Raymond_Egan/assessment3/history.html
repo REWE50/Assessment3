@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<!-- Document skeleton created using Adobe Dreamweaver -->
+    <!-- Resources used include getbootstrap.com, w3schools.com, stackoverflow.com -->
+    
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Athlone Town FC History</title>
+    <!-- Bootstrap CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<!-- My CSS -->
+	<link href="css/myStyles.css" rel="stylesheet">
+    <!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/bootstrap-3.3.4.js" type="text/javascript"></script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+        
+  	<!-- Ray Egan
+    	13/03/17
+        WDP Assessment 3 HTML Build -->
+    
+    <!-- The brief is to create a 4-10 page website with subject matter of our choosing.
+    Each page should contain a relevant doctype, be well commented, well formatted and free from JavaScript errors.
+    The site should be based on Bootstrap and jQuery, making it fully responsive.
+    It should have a consistant navigation system, with the major sections of the website always accessible.
+    It should contain a selection of Bootstrap components. 
+    It should contain a transition effect or some other animated jQuery effect.
+    It should include some custom CSS, with user defined classes and IDs.
+    It should communicate with at least one Bootstrap plugin using Data Attributes.
+   	It should exercise best practice in page load order. 
+    Code should be commented sufficiently and any re-used code referenced. -->  
+  </head>
+  
+  <body>
+  
+  	<!-- start of navbar -->
+    <!-- a full-width-of-the-screen navbar with colour inverted (black) that is static at the top of the page -->
+    <div class="navbar navbar-inverse navbar-static-top">
+        <!-- container class centres the content -->
+        <div class="navbarBG container">
+            <a href ="index.html" class="navbar-brand">Athlone Town FC</a>
+            
+            <!-- creating a button that will display when the navbar collapses for mobile viewing using data-attributes -->
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <a href="#" class="btn btn-default btn-sm">
+                	<!-- scalable glyphicon used to display "hamburger" icon to denote dropdown-menu navbar -->
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </a>
+            </button>
+            
+            <div class="collapse navbar-collapse navHeaderCollapse">
+            	<!-- an unordered list that, with styling, appears as a horizontal navbar, aligned to the right -->
+                <!-- start of outer ul -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Statistics <b class="caret"></b></a>
+                        <!-- a nested unordered list to create a dropdown menu for the Statistics -->
+                        <!-- start of innder ul -->
+                        <ul class="dropdown-menu">
+                            <li><a href="statistics.html#table">League Table</a></li>
+                          <li><a href="statistics.html#fixtures">Fixtures & Results</a></li>
+                            <li><a href="statistics.html#player-apps">Player Appearances</a></li>
+                      </ul><!-- end of inner ul -->
+                  </li>
+                    <li><a href="squad.html">Squad</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Youth Academy <b class="caret"></b></a>
+                        <!-- a nested unordered list to create a dropdown menu for the Youth Academy -->
+                        <!-- start of innder ul -->
+                        <ul class="dropdown-menu">
+                            <li><a href="under-19.html">Under-19s</a></li>
+                            <li><a href="under-17.html">Under-17s</a></li>
+                        </ul><!-- end of inner ul -->
+                    </li>
+                    <!-- active class attached to "current" list item to show what page we are currently on -->
+                    <li class="active"><a href="history.html">History</a></li>
+                </ul><!-- end of outer ul -->
+            
+            </div>
+	    </div><!-- end of navbar container -->
+   	</div><!-- end of navbar -->
+    
+    <!-- a new container class after the navbar to centre our main content -->
+    <div class="container" id="min-height">
+    	<!-- start of a row to contain columns -->
+        <div class="row">
+         
+            <!-- start of 9-col main content -->
+            <div class="col-lg-9">
+            	<div id="content">
+                	<!-- start of tabs -->
+                    <!-- https://www.w3schools.com/bootstrap/exercise.asp?filename=exercise_tabs6 -->
+                    <!-- using data-attributes and fade transition -->
+                    <ul class="nav nav-tabs">
+                      <li class="active"><a data-toggle="pill" href="#home">A Potted History</a></li>
+                      <li><a data-toggle="pill" href="#menu1">Major Honours</a></li> 
+                    </ul>
+                    
+                    <div class="tab-content">
+                      <div id="home" class="tab-pane fade in active">                       
+                        <div class="pull-right img-padding">
+                        	<img src="images/team-1896.jpg" class="img-responsive" alt="The Athlone Town team of 1895"/>
+                            <div class="caption">
+                            	The Athlone Town team of 1895
+                            </div>
+                        </div>
+                        <p></p>
+                        <p>Athlone Town Football Club is the oldest senior football in Ireland.</p>
+                    
+                        <p>Founded in 1887 by Orlando Robert Coote, the Club joined the then Free State League in 1922; the first club from outside Dublin to do so.</p>
+                        
+                        <p>The Club won the Free State (FAI) Cup in 1924, beating Cork side Fordsons 1-0 in the Final on St. Patrick's Day 1924. The side did not concede a single goal in the
+                        competition, and beat Shelbourne and Bohemians on their way to the Final.</p>
+                        
+                        <p>In recognition of their achievements, five members of the Cup winning team were chosen to represent the fledgling state at the 1924 Olympics in Paris, thus becoming
+                         Ireland's first international footballers, and Olympians. This period is chronicled by Tadhg Carey in his book "<a href="#" data-toggle="modal" data-target="#wwwk">When We Were Kings</a>".</p>
+                         
+                        <p>The Club dropped out of senior football in 1929, and didn't return to it again until 1969, when they re-joined the League alongside Finn Harps.</p>
+                        
+                        <p>There wasn't long to wait for more drama. After finishing runners-up to Bohemians in the 1974/75 season, Town qualified for the UEFA Cup.</p>
+                        
+                        <p>Drawn against little knock Norwegian side Valerenga, Athlone advanced to the next round 4-2 on aggregate.</p>
+                        
+                        <p>If their First Round opponents were little known, their Second Round opponents were world renowned AC Milan.</p>
+                        
+                        <p>Athlone welcomed the Italian giants to St. Mel's Park on a September afternoon in 1975, and sent shockwaves around the world when they emerged with a 0-0 draw.</p>
+                        
+                        <p>In fact, Athlone missed a penalty, when John Minnock's weakly-struck spot-kick were gratefully gathered by Italian international goalkeeper Enrico Albertosi.</p>
+                        
+                        <p>League titles followed in 1981 and 1983 under the guidance of local legend, Turlough O'Connor.</p>
+                        
+                        <p>In recent years the Club has fallen from grace, spending most of their time in the lower, First Division.</p>
+                        
+                        <p>However, there was some cheer in 2013, when controversial manager Roddy Collins guided the side to the First Division title, and promotion to the Premier Division.</p>
+                      </div>
+                      <div id="menu1" class="tab-pane fade">
+                        <p></p>
+                        <p>FAI Cup Winners: 1924</p>
+                        <p>League Champions: 1980/81, 1982/83</p>
+                        <p>League Ruuners-Up: 1974/75</p>
+                        <p>League Cup Winners: 1979/80, 1981/82, 1982/83</p>
+                        <p>League Cup Runners-Up: 1983/84, 1999/00</p>
+                        <p>Tyler All-Ireland Cup Winners: 1979/80</p>
+                        <p>Tyler All-Ireland Cup Runners-Up: 1980/81</p>
+                        <p>Leinster Senior Cup Winners: 1969/70, 1987/88, 1991/92</p>
+                      </div>
+                      
+                  </div><!-- end of tabs -->
+      
+                </div><!-- end of content -->
+            </div><!-- end of 9-col main content -->
+            
+            <!-- start of 3-col right sidebar -->
+	        <!-- sidebar contains no critical information, disappears at smaller viewports -->
+        	<div class="col-lg-3 blackBG hidden-md hidden-sm hidden-xs" id="rightSidebar">
+            	<!-- start next game info panel -->
+                <div class="panel panel-info blueBG">
+                  <div class="panel-body textShadow">
+                    Next Game
+                  </div>
+                  <div class="panel-footer blackText">
+                  	  <div class="row">    
+                        <div class="col-lg-5 align-center">
+                            <img src="images/cobh-ramblers-crest.png" alt="Cobh Ramblers Crest">
+                        </div>
+                        <div class="col-lg-2 align-center">
+                            <h1>V</h1>
+                        </div>
+                        <div class="col-lg-5 align-center">
+                            <img src="images/athlone-town-crest.png" alt="Athlone Town Crest">
+                        </div>
+                      </div>
+                      <div class="row">
+                      	<div class="col-lg-12 centerText">
+                        	St. Colman's Park<br>
+                    		Saturday March 18th
+                        </div>
+                      </div>
+                  </div>
+                </div><!-- end of next game info panel -->
+                
+                <!-- start did you know info panel -->
+                <div class="panel panel-info blueBG">
+                  <div class="panel-body textShadow">
+                    Did You Know?
+                  </div>
+                  <div class="panel-footer blackText">
+                  	<p>Athlone Town have had 4 home grounds; The Sportsground, The Ranelagh Grounds, Saint Mel's Park and Athlone Town Stadium</p>
+                    <p>The Club moved to Athlone Town Stadium in 2007.</p>
+                  </div>
+                </div><!-- end of did you know info panel -->
+        	</div><!-- end of 3-col right sidebar -->
+        </div><!-- end of row -->
+    </div><!-- end of content container -->
+    
+    <!-- start of footer -->
+    <!-- a full-width-of-the-screen footer with colour inverted (black) that is fixed to the bottom of the page -->
+    <footer class="navbar navbar-inverse navbar-fixed-bottom">
+        <!-- container class centres the content -->
+        <div class="navbarBG container">         
+                <div class="nav navbar-nav navbar-left" id="myFooter">
+                    <p class="whiteText">&copy; Athlone Town FC, Athlone Town Stadium, Athlone, Co. Westmeath</p>
+                </div>
+	    </div><!-- end of footer container -->
+   	</footer><!-- end of footer -->
+    
+    <!-- start of modal area -->
+      <div class="modal fade" id="wwwk" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Purchase When We Were Kings</h4>
+            </div>
+            <div class="modal-body">
+              <p>When We Were Kings is available to purchase by contacting the author Tadhg Carey directly at tadhg.carey@westmeathindependent.ie.</p>
+              <img src="images/when-we-were-kings.jpg" alt="When We Were Kings book">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of modal area -->
+   
+  	<!-- jQuery scripts included in the foot of the document to ensure the page has loaded before they can be called
+    	This is particularly important for users on mobile devices with limited bandwidth to ensure components trigger when they are supposed to -->
+  	<scriptarea>
+    	
+	</scriptarea><!-- end of scriptarea -->
+  </body>
+</html>
